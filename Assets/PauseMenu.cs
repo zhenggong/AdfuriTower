@@ -14,8 +14,25 @@ public class PauseMenu : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (/*touch event*/) {
+        if (Input.touchCount > 0) {
+            Touch touch = Input.GetTouch(0);
+            if (touch.phase == TouchPhase.Ended) {
+                if (GameIsPaused) {
+                    Resume();
+                }else{
+                    Pause();
 
+                }
+            }
         }
 	}
+
+    private void Resume() {
+
+    }
+
+    private void Pause() {
+
+    }
+
 }
