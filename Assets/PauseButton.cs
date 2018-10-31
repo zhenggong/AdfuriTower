@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PauseButton : MonoBehaviour {
     PauseButton btn;
-    public Transform pauseMenuUI;
+    public GameObject pauseMenuUI;
 	// Use this for initialization
 	void Start () {
         btn = GetComponent<PauseButton>();
@@ -19,7 +19,7 @@ public class PauseButton : MonoBehaviour {
 
     public void OnClick() {
         Debug.Log("押された");
-        pauseMenuUI = this.transform.Find("PanelMenu");
+        pauseMenuUI = GameObject.Find("PauseMenu");
         if (pauseMenuUI)
         {
             Debug.Log(pauseMenuUI);
