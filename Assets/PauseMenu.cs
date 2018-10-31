@@ -14,25 +14,39 @@ public class PauseMenu : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.touchCount > 0) {
-            Touch touch = Input.GetTouch(0);
-            if (touch.phase == TouchPhase.Ended) {
-                if (GameIsPaused) {
-                    Resume();
-                }else{
-                    Pause();
-
-                }
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            if (GameIsPaused)
+            {
+                Resume();
+            }
+            else
+            {
+                Pause();
             }
         }
-	}
+        //if (Input.touchCount > 0) {
+        //    Touch touch = Input.GetTouch(0);
+        //    if (touch.phase == TouchPhase.Ended) {
+        //        if (GameIsPaused) {
+        //            Resume();
+        //        }else{
+        //            Pause();
 
-    private void Resume() {
-
+        //        }
+        //    }
+        //}
     }
 
-    private void Pause() {
+    public void Resume() {
+        pauseMenuUI.SetActive(false);
+        Time.timeScale = 1f;
+        GameIsPaused = false;
+    }
 
+    public void Pause() {
+        pauseMenuUI.SetActive(true);
+        Time.timeScale = 0f;
+        GameIsPaused = true;
     }
 
 }
