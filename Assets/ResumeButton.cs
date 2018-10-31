@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ResumeButton : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
+    PauseButton btn;
+    public GameObject pauseMenuUI;
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -13,4 +14,17 @@ public class ResumeButton : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public void OnClick() {
+        Debug.Log("押された");
+        pauseMenuUI = GameObject.Find("PauseMenu");
+        if (pauseMenuUI)
+        {
+            Debug.Log(pauseMenuUI);
+        }
+        else
+        {
+            Debug.Log("No game object called wibble found");
+        }
+    }
 }
