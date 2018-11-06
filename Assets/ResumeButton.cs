@@ -26,6 +26,6 @@ public class ResumeButton : MonoBehaviour {
         {
             Debug.Log("No game object called wibble found");
         }
-        pauseMenuUI.SetActive(false);
+        pauseMenuUI.transform.Translate(566f, 0, 0, 0);
     }
 }

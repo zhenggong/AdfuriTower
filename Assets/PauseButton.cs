@@ -28,6 +28,7 @@ public class PauseButton : MonoBehaviour {
         {
             Debug.Log("No game object called wibble found");
         }
+        pauseMenuUI.transform.Translate(-566f,0,0,0);
 
     }
 }
