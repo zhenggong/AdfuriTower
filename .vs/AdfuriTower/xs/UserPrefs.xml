@@ -1,14 +1,14 @@
 ﻿<Properties StartupConfiguration="{7DDA96AD-5E88-FEAF-9B2B-61CF49856E64}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/PauseButton.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Plugins/Adfurikun/AdfurikunMovieInterstitialUtility.cs">
     <Files>
       <File FileName="Assets/WayPoints.cs" Line="1" Column="1" />
       <File FileName="Assets/Enemy.cs" Line="1" Column="1" />
-      <File FileName="Assets/PauseButton.cs" Line="34" Column="1" />
-      <File FileName="Assets/ResumeButton.cs" Line="20" Column="26" />
-      <File FileName="Assets/MiyamasuTestRunner/Runtime/Miyamasu2UnityTestConverter.cs" Line="7" Column="23" />
-      <File FileName="Assets/MiyamasuTestRunner/Runtime/MiyamasuTestEnumGenerator.cs" Line="10" Column="19" />
-      <File FileName="Assets/MiyamasuTestRunner/Runtime/MiyamasuTestIgniter.cs" Line="10" Column="19" />
+      <File FileName="Assets/ResumeButton.cs" Line="28" Column="10" />
+      <File FileName="Assets/GameSpawner.cs" Line="30" Column="9" />
+      <File FileName="Assets/Plugins/Adfurikun/AdfurikunMovieInterstitialUtility.cs" Line="103" Column="26" />
+      <File FileName="Assets/Plugins/Adfurikun/AdfurikunMovieExtensions.cs" Line="1" Column="1" />
+      <File FileName="Assets/PauseButton.cs" Line="18" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
